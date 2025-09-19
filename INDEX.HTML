@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelEase - Explore Your Next Destination</title>
+    <!-- TailwindCSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="LOGO-removebg-preview.png">
+<link rel="icon" type="image/png" sizes="16x16" href="LOGO-removebg-preview.png">
+<link rel="apple-touch-icon" sizes="180x180" href="LOGO-removebg-preview.png">
+<link rel="shortcut icon" href="LOGO-removebg-preview.png">
+
+  </head>
+  <body class="bg-white font-sans text-black">
+    <!-- Navbar -->
+    <header class="bg-white border-b border-gray-300 sticky top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <div class="flex items-center space-x-3">
+          <img src="LOGO-removebg-preview.png" alt="Logo" class="h-8 w-8" />
+          <h1 class="text-2xl font-bold">TravelEase</h1>
+        </div>
+        <nav>
+          <ul class="flex space-x-6 text-black">
+            <li><a href="#" class="hover:text-black">Home</a></li>
+            <li><a href="#destinations" class="hover:text-black">Destinations</a></li>
+            <li><a href="#itineraries" class="hover:text-black">Itineraries</a></li>
+            <li><a href="#contact" class="hover:text-black">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section with Video -->
+    <section class="relative hero flex items-center justify-center text-white">
+      <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
+        <source src="InShot_20250830_220817615.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="p-6 rounded-lg text-center">
+          <h2 class="text-4xl font-bold mb-2">Discover Your Next Adventure</h2>
+          <p class="text-lg">Handpicked destinations, curated itineraries, and travel tips</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations -->
+    <section id="destinations" class="py-12 container mx-auto">
+      <h3 class="text-3xl font-semibold text-center mb-8">Top Destinations</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Goa -->
+        <a
+          href="destinations/goa.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="/destinations/goa.jpg"
+            alt="Goa"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">Goa Beaches</h4>
+            <p class="text-gray-600">
+              Relax on the sunny beaches of Goa and enjoy vibrant nightlife.
+            </p>
+          </div>
+        </a>
+
+        <!-- Himalayas -->
+        <a
+          href="destinations/himalayas.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="destinations/himalaya.webp"
+            alt="Himalayas"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">Himalayan Trails</h4>
+            <p class="text-gray-600">
+              Trek through breathtaking mountain landscapes and valleys.
+            </p>
+          </div>
+        </a>
+
+        <!-- Jaipur -->
+        <a
+          href="destinations/jaipur.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="/destinations/jaipur.jpg"
+            alt="Jaipur"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">Jaipur Heritage</h4>
+            <p class="text-gray-600">
+              Explore forts, palaces, and vibrant culture of Rajasthan.
+            </p>
+          </div>
+        </a>
+
+        <!-- Paris -->
+        <a
+          href="destinations/paris.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34"
+            alt="Paris"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">Paris, France</h4>
+            <p class="text-gray-600">
+              Visit the Eiffel Tower, Louvre Museum, and charming cafes.
+            </p>
+          </div>
+        </a>
+
+        <!-- New York -->
+        <a
+          href="destinations/newyork.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="/destinations/nyc.webp"
+            alt="New York"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">New York, USA</h4>
+            <p class="text-gray-600">
+              Experience Times Square, Central Park, and the Statue of Liberty.
+            </p>
+          </div>
+        </a>
+
+        <!-- Tokyo -->
+        <a
+          href="destinations/tokyo.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="/destinations/tokyo.webp"
+            alt="Tokyo"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">Tokyo, Japan</h4>
+            <p class="text-gray-600">
+              Blend of modern skyscrapers, ancient temples, and sushi delights.
+            </p>
+          </div>
+        </a>
+
+        <!-- London -->
+        <a
+          href="destinations/london.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad"
+            alt="London"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">London, UK</h4>
+            <p class="text-gray-600">
+              Explore Big Ben, Buckingham Palace, and the River Thames.
+            </p>
+          </div>
+        </a>
+
+        <!-- Dubai -->
+        <a
+          href="destinations/dubai.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="destinations/dubai.jpg"
+            alt="Dubai"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">Dubai, UAE</h4>
+            <p class="text-gray-600">
+              Luxury shopping, ultramodern architecture, and desert adventures.
+            </p>
+          </div>
+        </a>
+
+        <!-- Rome -->
+        <a
+          href="destinations/rome.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="destinations/rome.webp"
+            alt="Rome"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">Rome, Italy</h4>
+            <p class="text-gray-600">
+              The Colosseum, Vatican City, and authentic Italian cuisine.
+            </p>
+          </div>
+        </a>
+
+        <!-- Sydney -->
+        <a
+          href="destinations/sydney.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="destinations/sydney.webp"
+            alt="Sydney"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">Sydney, Australia</h4>
+            <p class="text-gray-600">
+              See the Opera House, Bondi Beach, and stunning harbor views.
+            </p>
+          </div>
+        </a>
+
+        <!-- Bangkok -->
+        <a
+          href="destinations/bangkok.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="destinations/bangkok.jpg"
+            alt="Bangkok"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">Bangkok, Thailand</h4>
+            <p class="text-gray-600">
+              Vibrant street life, temples, and floating markets.
+            </p>
+          </div>
+        </a>
+
+        <!-- Cape Town -->
+        <a
+          href="destinations/capetown.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="destinations/capetown.webp"
+            alt="Cape Town"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">Cape Town, South Africa</h4>
+            <p class="text-gray-600">
+              Table Mountain, beaches, and a mix of cultures.
+            </p>
+          </div>
+        </a>
+
+        <!-- Rio -->
+        <a
+          href="destinations/rio.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="destinations/rio.webp"
+            alt="Rio"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">Rio de Janeiro, Brazil</h4>
+            <p class="text-gray-600">
+              Christ the Redeemer, Copacabana Beach, and carnival vibes.
+            </p>
+          </div>
+        </a>
+
+        <!-- Istanbul -->
+        <a
+          href="destinations/istanbul.html"
+          class="block bg-white rounded-xl shadow-md overflow-hidden card-hover"
+        >
+          <img
+            src="destinations/istanbul.jpg"
+            alt="Istanbul"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-bold mb-2">Istanbul, Turkey</h4>
+            <p class="text-gray-600">
+              A city where East meets West, with mosques and bazaars.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Community</h3>
+          <a href="#">Join Now</a>
+          <a href="#">Member Benefits</a>
+          <a href="#">Success Stories</a>
+          <a href="#">Events</a>
+        </div>
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <a href="#">City Guides</a>
+          <a href="#">Remote Jobs</a>
+          <a href="#">Travel Insurance</a>
+          <a href="#">Co-working Spaces</a>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <a href="#">Newsletter</a>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 TravelEase. All rights reserved.</p>
+      </div>
+    </footer>
+     <!-- ✅ Chatbot -->
+    <button id="chatbotBtn" 
+      class="fixed bottom-6 right-6 bg-black text-white p-4 rounded-full shadow-lg">
+      💬
+    </button>
+
+    <div id="chatbotWindow" 
+      class="hidden fixed bottom-20 right-6 w-80 bg-white border rounded-lg shadow-xl">
+      <div class="p-4 border-b bg-black text-white font-bold">TravelEase Chatbot</div>
+      <div id="chatContent" class="p-4 h-64 overflow-y-auto text-sm"></div>
+      <div class="flex border-t">
+        <input id="chatInput" type="text" placeholder="Ask me about travel..."
+               class="flex-1 p-2 text-sm border-0 outline-none" />
+        <button id="sendBtn" class="bg-black text-white px-4">Send</button>
+      </div>
+    </div>
+    <script src="chatbot.js"></script>
+  </body>
+</html>
